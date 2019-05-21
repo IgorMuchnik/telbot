@@ -121,12 +121,12 @@ def main():
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
     TOKEN = '699065555:AAHiOvkZaBQ0UEKrU1zUa9UHOdfYaEPoi1o'
-    REQUEST_KWARGS = {
-        'proxy_url': 'socks5://192.168.100.1:9150',
-        # Optional, if you need authentication:
-    }
+    #REQUEST_KWARGS = {
+    #    'proxy_url': 'socks5://192.168.100.1:9150',
+    #    # Optional, if you need authentication:
+    #}
 
-    updater = Updater(TOKEN, request_kwargs=REQUEST_KWARGS, use_context=True)
+    updater = Updater(TOKEN, use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
